@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KAXXAK · Próximamente</title>
+  <meta name="description" content="KAXXAK, el programa de gestión para asociaciones con cada gramo controlado por la báscula. Muy pronto.">
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="img/icono-180.png">
+  <meta property="og:title" content="KAXXAK · Próximamente">
+  <meta property="og:description" content="El programa de gestión para asociaciones con cada gramo controlado por la báscula.">
+  <meta property="og:image" content="https://kaxxak.es/img/icono-512.png">
+  <meta name="theme-color" content="#0d100f">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'none'; form-action 'none'; base-uri 'none'">
+  <style>
+    /* Mismos colores que la web (web/estilos.css). Página sola, sin scripts ni nada de terceros. */
+    :root { --fondo: #0d100f; --panel: #161a19; --borde: #262d2a; --texto: #e9edeb; --suave: #a3aca7; --verde: #27ae60; --verde-claro: #3fd07d; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; background: var(--fondo); color: var(--texto);
+      font: 17px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex; flex-direction: column;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--verde-claro); }
+    .contenedor { width: min(1120px, 100% - 32px); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--borde); }
+    header .contenedor { height: 68px; display: flex; align-items: center; }
+    header img { height: 26px; width: auto; }
+    main { flex: 1; display: flex; align-items: center; padding: 64px 0; }
+    main .contenedor { display: grid; grid-template-columns: 1fr 1.15fr; gap: 56px; align-items: center; }
+    .etiqueta {
+      display: inline-block; padding: 4px 12px; border-radius: 999px; margin-bottom: 20px;
+      background: rgba(39, 174, 96, 0.12); color: var(--verde-claro); font-size: 0.88rem; font-weight: 600;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 0.5em; }
+    p { margin: 0 0 1em; color: var(--suave); }
+    .boton {
+      display: inline-flex; padding: 14px 24px; border-radius: 12px; margin-top: 8px;
+      background: var(--verde); color: #fff; font-weight: 600; text-decoration: none;
+    }
+    .boton:hover { background: #2ec36c; }
+    .captura {
+      border: 1px solid var(--borde); border-radius: 16px; overflow: hidden; background: var(--panel);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+    }
+    footer { border-top: 1px solid var(--borde); padding: 24px 0; font-size: 0.88rem; color: var(--suave); }
+    @media (max-width: 860px) {
+      main .contenedor { grid-template-columns: 1fr; gap: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="contenedor"><img src="img/logotipo.png" alt="KAXXAK" width="166" height="26"></div>
+</header>
+
+<main>
+  <div class="contenedor">
+    <div>
+      <span class="etiqueta">Muy pronto</span>
+      <h1>Cada gramo de tu asociación, controlado por la báscula.</h1>
+      <p>Socios, cuotas, stock y dispensario en un solo programa. Funciona sin internet y los datos se quedan en vuestro local.</p>
+      <p>Estamos terminando la web. Si quieres saber más o probarlo antes que nadie, escríbenos.</p>
+      <a class="boton" href="mailto:contacto@kaxxak.com?subject=Quiero%20saber%20m%C3%A1s%20de%20KAXXAK">contacto@kaxxak.com</a>
+    </div>
+    <div class="captura"><img src="img/app-dispensario.webp" alt="Pantalla del dispensario de KAXXAK" width="1800" height="1125"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="contenedor">© KAXXAK · Esta página no usa cookies ni recoge datos.</div>
+</footer>
+
+</body>
+</html>
